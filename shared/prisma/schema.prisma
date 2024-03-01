@@ -1,0 +1,144 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("BB_RAZORPAY_BILLING_BLOCK_DATABASE_URL")
+}
+
+model users {
+  id              String  @id @default(uuid())
+  firstName       String
+  middleName      String?
+  lastName        String?
+  countryCode     String?
+  phnNo           String? @unique
+  displayName     String
+  displayPicture  String?
+  status          Int     @default(4)
+  isEmailVerified Boolean @default(false)
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+
+  subscriptions subscriptions[]
+  address       addresses[]
+}
+
+model admin_users {
+  id              String  @id @default(uuid())
+  firstName       String
+  middleName      String?
+  lastName        String?
+  countryCode     String?
+  phnNo           String? @unique
+  displayName     String
+  displayPicture  String?
+  status          Int     @default(4)
+  isEmailVerified Boolean @default(false)
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+
+  subscriptions subscriptions[]
+  plans         plans[]
+}
+
+model subscriptions {
+  id          String    @id @default(uuid())
+  userId      String
+  planId      String
+  status      String?   @default("inactive")
+  // active, inactive, cancelled, paused, authenticated, completed
+  // https://razorpay.com/docs/webhooks/payloads/subscriptions/
+  cycleCount  Int
+  startDate   DateTime?
+  expiryDate  DateTime?
+  metadata    Json?
+  serviceMeta Json?
+  serviceId   String?   @unique
+  service     String?
+  isSynced    Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  createdBy   String?
+
+  admin                 admin_users?            @relation(fields: [createdBy], references: [id])
+  user                  users                   @relation(fields: [userId], references: [id])
+  plan                  plans                   @relation(fields: [planId], references: [id])
+  subscription_invoices subscription_invoices[]
+
+  @@unique([planId, userId])
+}
+
+model subscription_invoices {
+  id             String   @id @default(uuid())
+  subscriptionId String
+  planId         String
+  serviceMeta    Json?
+  serviceId      String?  @unique
+  isSynced       Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  subscription subscriptions @relation(fields: [subscriptionId], references: [id])
+  plan         plans         @relation(fields: [planId], references: [id])
+}
+
+model plans {
+  id            String   @id @default(uuid())
+  name          String
+  serviceId     String?  @unique
+  service       String?
+  amount        Int
+  currency      String
+  interval      String
+  intervalCount Int
+  description   String?
+  isActive      Boolean  @default(true)
+  isSynced      Boolean  @default(false)
+  metadata      Json?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  createdBy     String
+
+  admin                 admin_users             @relation(fields: [createdBy], references: [id])
+  subscriptions         subscriptions[]
+  subscription_invoices subscription_invoices[]
+
+  @@unique([name, currency, interval])
+}
+
+model addresses {
+  id          String   @id @default(uuid())
+  userId      String
+  addressType String
+  isPrimary   Boolean? @default(false)
+  name        String
+  line1       String
+  line2       String?
+  line3       String?
+  city        String
+  state       String
+  country     String
+  postalCode  String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user users @relation(fields: [userId], references: [id])
+
+  @@unique([userId, isPrimary])
+}
+
+model currency {
+  id           String   @id @default(uuid())
+  countryName  String   @unique
+  currencyCode String?
+  timeZone     String[]
+  isDefault    Boolean  @default(false)
+}

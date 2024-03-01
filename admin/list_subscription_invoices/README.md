@@ -1,0 +1,1 @@
+# list_added_currencies

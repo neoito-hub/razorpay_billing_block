@@ -1,0 +1,62 @@
+{
+  "blockId": "staoOwTxA32RJgMTjRnZN",
+  "name": "admin",
+  "type": "package",
+  "source": {
+    "https": "https://github.com/neoito-hub/razorpay_billing_block.git",
+    "ssh": "git@github.com:neoito-hub/razorpay_billing_block.git",
+    "branch": "block_admin"
+  },
+  "parentBlockIDs": [
+    "GQ09UgGv7CHlU_eM4uZOf"
+  ],
+  "repoType": "mono",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": true,
+  "dependencies": {
+    "cancel_subscription": {
+      "directory": "cancel_subscription"
+    },
+    "create_plan": {
+      "directory": "create_plan"
+    },
+    "create_subscription": {
+      "directory": "create_subscription"
+    },
+    "list_plans": {
+      "directory": "list_plans"
+    },
+    "list_available_currencies": {
+      "directory": "list_available_currencies"
+    },
+    "add_currency": {
+      "directory": "add_currency"
+    },
+    "list_added_currencies": {
+      "directory": "list_added_currencies"
+    },
+    "list_subscriptions": {
+      "directory": "list_subscriptions"
+    },
+    "pause_subscription": {
+      "directory": "pause_subscription"
+    },
+    "resume_subscription": {
+      "directory": "resume_subscription"
+    },
+    "update_subscription": {
+      "directory": "update_subscription"
+    },
+    "set_default_currency": {
+      "directory": "set_default_currency"
+    },
+    "capture_payment": {
+      "directory": "capture_payment"
+    },
+    "list_subscription_invoices": {
+      "directory": "list_subscription_invoices"
+    }
+  }
+}

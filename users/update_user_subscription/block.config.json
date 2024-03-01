@@ -1,0 +1,21 @@
+{
+  "blockId": "ncdMmfi84s3cmBC7FVlxj",
+  "name": "update_user_subscription",
+  "type": "function",
+  "source": {
+    "https": "https://github.com/neoito-hub/razorpay_billing_block.git",
+    "ssh": "git@github.com:neoito-hub/razorpay_billing_block.git",
+    "branch": "block_update_user_subscription"
+  },
+  "parentBlockIDs": [
+    "GQ09UgGv7CHlU_eM4uZOf",
+    "6dA-cog3aRgki33G4MuB2"
+  ],
+  "repoType": "mono",
+  "language": "nodejs",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": true,
+  "start": "node index.js"
+}

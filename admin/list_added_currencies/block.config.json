@@ -1,0 +1,21 @@
+{
+  "blockId": "WcCW3OMDARkqSFEmIUIvJ",
+  "name": "list_added_currencies",
+  "type": "function",
+  "source": {
+    "https": "https://github.com/neoito-hub/razorpay_billing_block.git",
+    "ssh": "git@github.com:neoito-hub/razorpay_billing_block.git",
+    "branch": "block_list_added_currencies"
+  },
+  "parentBlockIDs": [
+    "GQ09UgGv7CHlU_eM4uZOf",
+    "staoOwTxA32RJgMTjRnZN"
+  ],
+  "repoType": "mono",
+  "language": "nodejs",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": true,
+  "start": "node index.js"
+}
