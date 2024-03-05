@@ -7,37 +7,60 @@
     "ssh": "git@github.com:neoito-hub/razorpay_billing_block.git",
     "branch": "block_users"
   },
-  "parentBlockIDs": ["GQ09UgGv7CHlU_eM4uZOf"],
+  "parentBlockIDs": [
+    "GQ09UgGv7CHlU_eM4uZOf"
+  ],
   "repoType": "mono",
-  "supportedAppblockVersions": ["1.0.0"],
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
   "isPublic": true,
   "dependencies": {
     "list_user_subscriptions": {
-      "directory": "list_user_subscriptions"
+      "directory": "list_user_subscriptions",
+      "versionId": "TPyKyG4GFC68CO5qlWbRN",
+      "version": "0.0.1"
     },
     "list_user_plans": {
-      "directory": "list_user_plans"
+      "directory": "list_user_plans",
+      "versionId": "9me-rPkyqGUx2AzvGNJmL",
+      "version": "0.0.1"
     },
     "create_user_subscription": {
-      "directory": "create_user_subscription"
+      "directory": "create_user_subscription",
+      "versionId": "h3kj67c6E7SHWOW2ZfMX6",
+      "version": "0.0.1"
     },
     "cancel_user_subscription": {
-      "directory": "cancel_user_subscription"
+      "directory": "cancel_user_subscription",
+      "versionId": "5WgF2u99pYhR9J_veU5GR",
+      "version": "0.0.1"
     },
     "update_user_subscription": {
-      "directory": "update_user_subscription"
+      "directory": "update_user_subscription",
+      "versionId": "BTDyy_TvijvoX0JATcX4J",
+      "version": "0.0.1"
     },
     "list_user_subscription_invoices": {
-      "directory": "list_user_subscription_invoices"
+      "directory": "list_user_subscription_invoices",
+      "versionId": "XFSKzPRi2ld9PfswQGKl0",
+      "version": "0.0.1"
     },
     "add_user_address": {
-      "directory": "add_user_address"
+      "directory": "add_user_address",
+      "versionId": "XF7cw9RU1LZd81Ky29LXr",
+      "version": "0.0.1"
     },
     "update_user_address": {
-      "directory": "update_user_address"
+      "directory": "update_user_address",
+      "versionId": "5GE_21OxBshm6TZceOI43",
+      "version": "0.0.1"
     },
     "list_user_addresses": {
-      "directory": "list_user_addresses"
+      "directory": "list_user_addresses",
+      "versionId": "yYMhV9eLd7fXe-gZ8LFlf",
+      "version": "0.0.1"
     }
-  }
+  },
+  "version": "0.0.1"
 }
