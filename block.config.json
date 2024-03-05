@@ -1,0 +1,43 @@
+{
+  "blockId": "6dA-cog3aRgki33G4MuB2",
+  "name": "users",
+  "type": "package",
+  "source": {
+    "https": "https://github.com/neoito-hub/razorpay_billing_block.git",
+    "ssh": "git@github.com:neoito-hub/razorpay_billing_block.git",
+    "branch": "block_users"
+  },
+  "parentBlockIDs": ["GQ09UgGv7CHlU_eM4uZOf"],
+  "repoType": "mono",
+  "supportedAppblockVersions": ["1.0.0"],
+  "isPublic": true,
+  "dependencies": {
+    "list_user_subscriptions": {
+      "directory": "list_user_subscriptions"
+    },
+    "list_user_plans": {
+      "directory": "list_user_plans"
+    },
+    "create_user_subscription": {
+      "directory": "create_user_subscription"
+    },
+    "cancel_user_subscription": {
+      "directory": "cancel_user_subscription"
+    },
+    "update_user_subscription": {
+      "directory": "update_user_subscription"
+    },
+    "list_user_subscription_invoices": {
+      "directory": "list_user_subscription_invoices"
+    },
+    "add_user_address": {
+      "directory": "add_user_address"
+    },
+    "update_user_address": {
+      "directory": "update_user_address"
+    },
+    "list_user_addresses": {
+      "directory": "list_user_addresses"
+    }
+  }
+}
