@@ -1,0 +1,40 @@
+{
+  "name": "razorpay_billing_block",
+  "type": "package",
+  "blockId": "GQ09UgGv7CHlU_eM4uZOf",
+  "source": {
+    "https": "https://github.com/neoito-hub/razorpay_billing_block.git",
+    "ssh": "git@github.com:neoito-hub/razorpay_billing_block.git",
+    "branch": "block_razorpay_billing_block"
+  },
+  "parentBlockIDs": [],
+  "isPublic": true,
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "repoType": "mono",
+  "middlewares": [
+    {
+      "middlewaresList": [
+        "auth_middleware"
+      ]
+    }
+  ],
+  "dependencies": {
+    "shared": {
+      "directory": "shared"
+    },
+    "vault": {
+      "directory": "vault"
+    },
+    "admin": {
+      "directory": "admin"
+    },
+    "auth_middleware": {
+      "directory": "auth_middleware"
+    },
+    "users": {
+      "directory": "users"
+    }
+  }
+}

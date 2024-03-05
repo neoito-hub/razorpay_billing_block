@@ -1,0 +1,831 @@
+{
+  "info": {
+    "_postman_id": "d04b6845-2875-4f29-a338-b19af13fec8c",
+    "name": "_RAZORPAY_BLOCK",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "20240758"
+  },
+  "item": [
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "list_user_subscriptions",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/users/list_user_subscriptions",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["users", "list_user_subscriptions"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "list_user_subscription_invoices",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/users/list_user_subscription_invoices",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["users", "list_user_subscription_invoices"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "cancel_user_subscription",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"subscriptionId\": \"testeststet\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/users/cancel_user_subscription",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["users", "cancel_user_subscription"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update_user_subscription",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \n \"planId\": \"abc123\", \n \"cycleCount\": 5, \n \"startDate\": \"2024-02-01\", \n \"expiryDate\": \"2024-07-31\", \n \"metadata\": { \n     \"description\": \"Sample plan for testing purposes\" \n }, \n \"serviceMeta\": {} \n }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/users/update_user_subscription",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["users", "update_user_subscription"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create_user_subscription",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"planId\": \"IVdWmAvfSN_sVXOMM18Mq\",\n    \"cycleCount\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/users/create_user_subscription",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["users", "create_user_subscription"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add_user_address",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"isPrimary\": true,\n    \"name\": \"John Doe\",\n    \"line1\": \"123 Main St\",\n    \"line2\": \"Apt 101\",\n    \"line3\": \"\",\n    \"city\": \"Springfield\",\n    \"state\": \"Illinois\",\n    \"country\": \"United States\",\n    \"postalCode\": \"12345\",\n    \"addressType\": \"billing_address\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/users/add_user_address",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["users", "add_user_address"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update_user_address",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"id\": \"061y2bsepzetcefeamjKi\",\n    \"line1\": \"12345 Main St\",\n    \"postalCode\": \"123456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/users/update_user_address",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["users", "update_user_address"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "list_user_plans",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/users/list_user_plans",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["users", "list_user_plans"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "list_user_addresses",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/users/list_user_addresses",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["users", "list_user_addresses"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Admin",
+      "item": [
+        {
+          "name": "admin_list_available_currencies",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{main_user_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "space_id",
+                "value": "{{main_space_id}}"
+              },
+              {
+                "key": "Origin",
+                "value": "https://dev-spaces.appblocks.com"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Referer",
+                "value": "https://dev-spaces.appblocks.com/"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "key": "TE",
+                "value": "trailers"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"searchKeyword\": \"uni\",\n    \"count\": 10,\n    \"skip\": 0\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/list_available_currencies",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "list_available_currencies"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_create_plan",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Test Plan A\",\n    \"amount\": 900,\n    \"currency\": \"INR\",\n    \"interval\": \"weekly\",\n    \"intervalCount\": 7,\n    \"description\": \"Testing workflow\",\n    \"metadata\": {\n        \"key\": \"value\"\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/create_plan",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "create_plan"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_list_plans",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/list_plans",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "list_plans"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_list_subscriptions",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/list_subscriptions",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "list_subscriptions"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_list_subscription_invoices",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/list_subscription_invoices",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "list_subscription_invoices"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_create_subscription",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \n \"planId\": \"abc123\", \n \"userId\": \"user123\", \n \"cycleCount\": 5, \n \"startDate\": \"2024-02-01\", \n \"expiryDate\": \"2024-07-31\", \n \"metadata\": { \n     \"description\": \"Sample plan for testing purposes\" \n }, \n \"serviceMeta\": {} \n }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/create_subscription",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "create_subscription"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add_currency",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{main_user_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "space_id",
+                "value": "{{main_space_id}}"
+              },
+              {
+                "key": "Origin",
+                "value": "https://dev-spaces.appblocks.com"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Referer",
+                "value": "https://dev-spaces.appblocks.com/"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "key": "TE",
+                "value": "trailers"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"currencies\": [\n        {\n            \"countryName\": \"United States\",\n            \"currencyCode\": \"USD\",\n            \"timeZone\": [\n                \"America/New_York\",\n                \"America/Detroit\",\n                \"America/Kentucky/Louisville\",\n                \"America/Kentucky/Monticello\",\n                \"America/Indiana/Indianapolis\",\n                \"America/Indiana/Vincennes\",\n                \"America/Indiana/Winamac\",\n                \"America/Indiana/Marengo\",\n                \"America/Indiana/Petersburg\",\n                \"America/Indiana/Vevay\",\n                \"America/Chicago\",\n                \"America/Indiana/Tell_City\",\n                \"America/Indiana/Knox\",\n                \"America/Menominee\",\n                \"America/North_Dakota/Center\",\n                \"America/North_Dakota/New_Salem\",\n                \"America/North_Dakota/Beulah\",\n                \"America/Denver\",\n                \"America/Boise\",\n                \"America/Phoenix\",\n                \"America/Los_Angeles\",\n                \"America/Anchorage\",\n                \"America/Juneau\",\n                \"America/Sitka\",\n                \"America/Yakutat\",\n                \"America/Nome\",\n                \"America/Adak\",\n                \"America/Metlakatla\",\n                \"Pacific/Honolulu\"\n            ]\n        },\n        {\n            \"countryName\": \"India\",\n            \"currencyCode\": \"INR\",\n            \"timeZone\": [\n                \"Asia/Kolkata\"\n            ]\n        }\n    ]\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/add_currency",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "add_currency"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_cancel_subscription",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"subscriptionId\": \"testeststet\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/cancel_subscription",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "cancel_subscription"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_list_added_currencies",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{main_user_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "space_id",
+                "value": "{{main_space_id}}"
+              },
+              {
+                "key": "Origin",
+                "value": "https://dev-spaces.appblocks.com"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Referer",
+                "value": "https://dev-spaces.appblocks.com/"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "key": "TE",
+                "value": "trailers"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"searchKeyword\":\"\",\"count\":10,\"skip\":0}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/list_added_currencies",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "list_added_currencies"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_update_subscription",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \n \"planId\": \"abc123\", \n \"cycleCount\": 5, \n \"expiryDate\": \"2024-07-31\", \n \"metadata\": { \n     \"description\": \"Sample plan for testing purposes\" \n }, \n \"serviceMeta\": {} \n }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/update_subscription",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "update_subscription"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_set_default_currency",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "en-US,en;q=0.5"
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "space_id",
+                "value": "",
+                "disabled": true
+              },
+              {
+                "key": "Origin",
+                "value": "https://dev-spaces.appblocks.com"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Referer",
+                "value": "https://dev-spaces.appblocks.com/"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "key": "TE",
+                "value": "trailers"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"currencyID\":\"1ac1f094-1b02-4832-bb1b-b300098ca350\"}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/set_default_currency",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "set_default_currency"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_pause_subscription",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"subscriptionId\": \"testeststet\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/pause_subscription",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "pause_subscription"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "admin_resume_subscription",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"subscriptionId\": \"testeststet\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/admin/resume_subscription",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["admin", "resume_subscription"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Vault",
+      "item": [
+        {
+          "name": "vault add kv",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"key\": \"vendor\",\n  \"value\": {\n    \"key_id\": \"key_id\",\n    \"key_secret\": \"key_secret\"\n  }\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/vault/create_kv_secret",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["vault", "create_kv_secret"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
