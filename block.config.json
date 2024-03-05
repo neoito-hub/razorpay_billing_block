@@ -1,0 +1,26 @@
+{
+  "blockId": "hD0H3o1eyKaJBEO6yZpGL",
+  "name": "vault",
+  "type": "package",
+  "source": {
+    "https": "https://github.com/neoito-hub/razorpay_billing_block.git",
+    "ssh": "git@github.com:neoito-hub/razorpay_billing_block.git",
+    "branch": "block_vault"
+  },
+  "parentBlockIDs": [
+    "GQ09UgGv7CHlU_eM4uZOf"
+  ],
+  "repoType": "mono",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": true,
+  "dependencies": {
+    "create_kv_secret": {
+      "directory": "create_kv_secret"
+    },
+    "read_kv_secret": {
+      "directory": "read_kv_secret"
+    }
+  }
+}
