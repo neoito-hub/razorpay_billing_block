@@ -1,0 +1,75 @@
+
+Available webhooks
+===================================================================================
+Payment Events
+    payment.authorized
+    payment.failed
+    payment.captured
+    payment.dispute.created
+    payment.dispute.won
+    payment.dispute.lost
+    payment.dispute.closed
+    payment.dispute.under_review
+    payment.dispute.action_required
+    payment.downtime.started
+    payment.downtime.updated
+    payment.downtime.resolved
+Order Events
+    order.paid
+Invoice Events
+    invoice.paid
+    invoice.partially_paid
+    invoice.expired
+Subscription Events
+    subscription.authenticated
+    subscription.paused
+    subscription.resumed
+    subscription.activated
+    subscription.pending
+    subscription.halted
+    subscription.charged
+    subscription.cancelled
+    subscription.completed
+    subscription.updated
+Fund_account Events
+    fund_account.validation.completed
+    fund_account.validation.failed
+Refund Events
+    refund.speed_changed
+    refund.processed
+    refund.failed
+    refund.created
+Payment_link Events
+    payment_link.paid
+    payment_link.partially_paid
+    payment_link.expired
+    payment_link.cancelled
+===================================================================================
+
+
+Currently subscribed webhook responses
+
+======WEBHOOK payment.captured======
+
+{"entity":"event","account_id":"acc_NRXYAwZ4c2KSlA","event":"payment.captured","contains":["payment"],"payload":{"payment":{"entity":{"id":"pay_NeIUZuxtyTVLhZ","entity":"payment","amount":90000,"currency":"INR","base_amount":90000,"status":"captured","order_id":"order_NeIU4L2gPSFx3g","invoice_id":"inv_NeIU4IBmjNQl6u","international":false,"method":"card","amount_refunded":0,"amount_transferred":0,"refund_status":null,"captured":true,"description":null,"card_id":"card_NeIUa6oZZTG8SH","card":{"id":"card_NeIUa6oZZTG8SH","entity":"card","name":"","last4":"5449","network":"MasterCard","type":"credit","issuer":"UTIB","international":false,"emi":false,"expiry_month":"01","expiry_year":"2099","sub_type":"consumer","token_iin":null},"bank":null,"wallet":null,"vpa":null,"email":"thalal.hassan@neoito.com","contact":"+919539277290","customer_id":"cust_NUqYA39QxEHooF","token_id":"token_NeIUaW3sCRGdh5","notes":[],"fee":2250,"tax":0,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"auth_code":"449525"},"created_at":1708686121,"reward":null}}},"created_at":1708686128}
+
+======WEBHOOK payload END======
+
+
+======WEBHOOK order.paid======
+
+{"entity":"event","account_id":"acc_NRXYAwZ4c2KSlA","event":"order.paid","contains":["payment","order"],"payload":{"payment":{"entity":{"id":"pay_NeIUZuxtyTVLhZ","entity":"payment","amount":90000,"currency":"INR","base_amount":90000,"status":"captured","order_id":"order_NeIU4L2gPSFx3g","invoice_id":"inv_NeIU4IBmjNQl6u","international":false,"method":"card","amount_refunded":0,"amount_transferred":0,"refund_status":null,"captured":true,"description":null,"card_id":"card_NeIUa6oZZTG8SH","card":{"id":"card_NeIUa6oZZTG8SH","entity":"card","name":"","last4":"5449","network":"MasterCard","type":"credit","issuer":"UTIB","international":false,"emi":false,"expiry_month":"01","expiry_year":"2099","sub_type":"consumer","token_iin":null},"bank":null,"wallet":null,"vpa":null,"email":"thalal.hassan@neoito.com","contact":"+919539277290","customer_id":"cust_NUqYA39QxEHooF","token_id":"token_NeIUaW3sCRGdh5","notes":[],"fee":2250,"tax":0,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"auth_code":"449525"},"created_at":1708686121,"reward":null}},"order":{"entity":{"id":"order_NeIU4L2gPSFx3g","entity":"order","amount":90000,"amount_paid":90000,"amount_due":0,"currency":"INR","receipt":null,"offer_id":null,"status":"paid","attempts":1,"notes":[],"created_at":1708686091}}},"created_at":1708686128}
+
+======WEBHOOK payload END======
+
+======WEBHOOK subscription.authenticated======
+
+{"entity":"event","account_id":"acc_NRXYAwZ4c2KSlA","event":"subscription.authenticated","contains":["subscription"],"payload":{"subscription":{"entity":{"id":"sub_NeIU3qjPtSsW56","entity":"subscription","plan_id":"plan_NeIPvgeQkoJA0c","customer_id":"cust_NUqYA39QxEHooF","status":"active","current_start":1708686121,"current_end":1712860200,"ended_at":null,"quantity":1,"notes":[],"charge_at":1712860200,"start_at":1708686121,"end_at":1712860200,"auth_attempts":0,"total_count":2,"paid_count":1,"customer_notify":true,"created_at":1708686091,"expire_by":null,"short_url":null,"has_scheduled_changes":false,"change_scheduled_at":null,"source":"api","payment_method":"card","offer_id":null,"remaining_count":1}}},"created_at":1708686192}
+
+======WEBHOOK payload END======
+
+======WEBHOOK subscription.activated======
+
+{"entity":"event","account_id":"acc_NRXYAwZ4c2KSlA","event":"subscription.activated","contains":["subscription","payment"],"payload":{"subscription":{"entity":{"id":"sub_NeIU3qjPtSsW56","entity":"subscription","plan_id":"plan_NeIPvgeQkoJA0c","customer_id":"cust_NUqYA39QxEHooF","status":"active","current_start":1708686121,"current_end":1712860200,"ended_at":null,"quantity":1,"notes":[],"charge_at":1712860200,"start_at":1708686121,"end_at":1712860200,"auth_attempts":0,"total_count":2,"paid_count":1,"customer_notify":true,"created_at":1708686091,"expire_by":null,"short_url":null,"has_scheduled_changes":false,"change_scheduled_at":null,"source":"api","payment_method":"card","offer_id":null,"remaining_count":1}},"payment":{"entity":{"id":"pay_NeIUZuxtyTVLhZ","entity":"payment","amount":90000,"currency":"INR","status":"captured","order_id":"order_NeIU4L2gPSFx3g","invoice_id":"inv_NeIU4IBmjNQl6u","international":false,"method":"card","amount_refunded":0,"amount_transferred":0,"refund_status":null,"captured":"1","description":null,"card_id":"card_NeIUa6oZZTG8SH","card":{"id":"card_NeIUa6oZZTG8SH","entity":"card","name":"","last4":"5449","network":"MC","type":"credit","issuer":"UTIB","international":false,"emi":false,"expiry_month":"01","expiry_year":"2099","sub_type":"consumer","token_iin":null,"number":"**** **** **** 5449","color":"#25BAC3"},"bank":null,"wallet":null,"vpa":null,"email":"thalal.hassan@neoito.com","contact":"+919539277290","customer_id":"cust_NUqYA39QxEHooF","token_id":"token_NeIUaW3sCRGdh5","notes":[],"fee":2250,"tax":0,"error_code":null,"error_description":null,"acquirer_data":{"auth_code":"449525"},"created_at":1708686121}}},"created_at":1708686192}
+
+======WEBHOOK payload END======
