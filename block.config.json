@@ -1,0 +1,20 @@
+{
+  "blockId": "NorM1oD6Em_B549z8r6K2",
+  "name": "auth_middleware",
+  "type": "function",
+  "source": {
+    "https": "https://github.com/neoito-hub/razorpay_billing_block.git",
+    "ssh": "git@github.com:neoito-hub/razorpay_billing_block.git",
+    "branch": "block_auth_middleware"
+  },
+  "parentBlockIDs": [
+    "GQ09UgGv7CHlU_eM4uZOf"
+  ],
+  "repoType": "mono",
+  "language": "nodejs",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": true,
+  "start": "node index.js"
+}
