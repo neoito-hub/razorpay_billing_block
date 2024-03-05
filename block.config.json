@@ -22,19 +22,30 @@
   ],
   "dependencies": {
     "shared": {
-      "directory": "shared"
+      "directory": "shared",
+      "versionId": "kCXSUtyCb-AWoqOtaWQYl",
+      "version": "0.0.1"
     },
     "vault": {
-      "directory": "vault"
+      "directory": "vault",
+      "versionId": "FX04FFwWmzAv-uc0Z8m5U",
+      "version": "0.0.1"
     },
     "admin": {
-      "directory": "admin"
+      "directory": "admin",
+      "versionId": "wrv3wjRq8EwIxy44YnkBf",
+      "version": "0.0.1"
     },
     "auth_middleware": {
-      "directory": "auth_middleware"
+      "directory": "auth_middleware",
+      "versionId": "tgMsPQzyz7BdQUKccuFgD",
+      "version": "0.0.1"
     },
     "users": {
-      "directory": "users"
+      "directory": "users",
+      "versionId": "4qW3SvZp0FypPlijhXHQ8",
+      "version": "0.0.1"
     }
-  }
+  },
+  "version": "0.0.1"
 }
