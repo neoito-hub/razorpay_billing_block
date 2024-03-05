@@ -17,10 +17,15 @@
   "isPublic": true,
   "dependencies": {
     "create_kv_secret": {
-      "directory": "create_kv_secret"
+      "directory": "create_kv_secret",
+      "versionId": "ssZ-Zro8VnOvuMf4troJ3",
+      "version": "0.0.1"
     },
     "read_kv_secret": {
-      "directory": "read_kv_secret"
+      "directory": "read_kv_secret",
+      "versionId": "yumTDKFac_eof_T7HeFMH",
+      "version": "0.0.1"
     }
-  }
+  },
+  "version": "0.0.1"
 }
