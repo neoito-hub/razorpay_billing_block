@@ -1,0 +1,20 @@
+{
+  "blockId": "szs8CPKYtcMNl9yy6k54a",
+  "name": "shared",
+  "type": "shared-fn",
+  "source": {
+    "https": "https://github.com/neoito-hub/razorpay_billing_block.git",
+    "ssh": "git@github.com:neoito-hub/razorpay_billing_block.git",
+    "branch": "block_shared"
+  },
+  "parentBlockIDs": [
+    "GQ09UgGv7CHlU_eM4uZOf"
+  ],
+  "repoType": "mono",
+  "language": "nodejs",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": true,
+  "start": "node index.js"
+}
