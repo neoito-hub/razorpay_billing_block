@@ -1,0 +1,21 @@
+{
+  "blockId": "WZGvf-U-r5eYDYFAOKGbM",
+  "name": "list_subscription_invoices",
+  "type": "function",
+  "source": {
+    "https": "https://github.com/neoito-hub/razorpay_billing_block.git",
+    "ssh": "git@github.com:neoito-hub/razorpay_billing_block.git",
+    "branch": "block_list_subscription_invoices"
+  },
+  "parentBlockIDs": [
+    "GQ09UgGv7CHlU_eM4uZOf",
+    "staoOwTxA32RJgMTjRnZN"
+  ],
+  "repoType": "mono",
+  "language": "nodejs",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": true,
+  "start": "node index.js"
+}
