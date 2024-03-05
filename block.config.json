@@ -17,46 +17,75 @@
   "isPublic": true,
   "dependencies": {
     "cancel_subscription": {
-      "directory": "cancel_subscription"
+      "directory": "cancel_subscription",
+      "versionId": "tsEhj4l1FDRfHbwHXD0nc",
+      "version": "0.0.1"
     },
     "create_plan": {
-      "directory": "create_plan"
+      "directory": "create_plan",
+      "versionId": "ZkxY2GoFkN34tN8T4-y8A",
+      "version": "0.0.1"
     },
     "create_subscription": {
-      "directory": "create_subscription"
+      "directory": "create_subscription",
+      "versionId": "NtkioRWrvZ3hN-6X7ZzAg",
+      "version": "0.0.1"
     },
     "list_plans": {
-      "directory": "list_plans"
+      "directory": "list_plans",
+      "versionId": "AnH9HtfsIRHtvJuj_vOtW",
+      "version": "0.0.1"
     },
     "list_available_currencies": {
-      "directory": "list_available_currencies"
+      "directory": "list_available_currencies",
+      "versionId": "RgTlmlp0l5J3FK-MESpjK",
+      "version": "0.0.1"
     },
     "add_currency": {
-      "directory": "add_currency"
+      "directory": "add_currency",
+      "versionId": "3-4XHtbLkhvWQ5FAcj-2n",
+      "version": "0.0.1"
     },
     "list_added_currencies": {
-      "directory": "list_added_currencies"
+      "directory": "list_added_currencies",
+      "versionId": "5bx72nevcalocDehIKzUV",
+      "version": "0.0.1"
     },
     "list_subscriptions": {
-      "directory": "list_subscriptions"
+      "directory": "list_subscriptions",
+      "versionId": "dGYbiBn2gzzRQGWKIk9sn",
+      "version": "0.0.1"
     },
     "pause_subscription": {
-      "directory": "pause_subscription"
+      "directory": "pause_subscription",
+      "versionId": "aYxUz61D3DFnAVNWrxOxE",
+      "version": "0.0.1"
     },
     "resume_subscription": {
-      "directory": "resume_subscription"
+      "directory": "resume_subscription",
+      "versionId": "sejR0nuOC7SZTbE7gO4mf",
+      "version": "0.0.1"
     },
     "update_subscription": {
-      "directory": "update_subscription"
+      "directory": "update_subscription",
+      "versionId": "4L-ua7nIycHdheEqQDLBj",
+      "version": "0.0.1"
     },
     "set_default_currency": {
-      "directory": "set_default_currency"
+      "directory": "set_default_currency",
+      "versionId": "FVnTzVDSGp2alvyACQNIG",
+      "version": "0.0.1"
     },
     "capture_payment": {
-      "directory": "capture_payment"
+      "directory": "capture_payment",
+      "versionId": "vvNr79zEHFlFDO1nS8Zud",
+      "version": "0.0.1"
     },
     "list_subscription_invoices": {
-      "directory": "list_subscription_invoices"
+      "directory": "list_subscription_invoices",
+      "versionId": "5r5xwpZZ_nKEKszzdv_9Y",
+      "version": "0.0.1"
     }
-  }
+  },
+  "version": "0.0.1"
 }
