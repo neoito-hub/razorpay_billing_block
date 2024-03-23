@@ -1,0 +1,46 @@
+version: "3.8"
+services:
+  ngrok:
+    image: ngrok/ngrok:latest
+    restart: unless-stopped
+    command:
+      - "start"
+      - "--all"
+      - "--config"
+      - "/etc/ngrok.yml"
+    volumes:
+      - ./ngrok.yml:/etc/ngrok.yml
+    ports:
+      - 4040:4040
+
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=razorpay
+    volumes:
+      - ./._bb_/postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5444:5432"
+
+  vault:
+    image: hashicorp/vault:latest
+    environment:
+      VAULT_DEV_ROOT_TOKEN_ID: test_vault_token
+    ports:
+      - 8200:8200
+    volumes:
+      - ./._bb_/vault-volume:/data
+    privileged: true
+
+  app:
+    build: .
+    working_dir: /app
+    command: >
+      sh -c "bb start && cd shared && npm run prisma:db:push && npm run prisma:seed:dev && cd .. && bb log"
+    ports:
+      - 5000:5000
+    depends_on:
+      - postgres
+      - vault

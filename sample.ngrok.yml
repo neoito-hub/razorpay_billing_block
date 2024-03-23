@@ -1,0 +1,7 @@
+authtoken: authtoken
+version: 2
+tunnels:
+  my_app:
+    labels:
+      - edge=edghts_edge_id
+    addr: http://user_system_public_ip:5000

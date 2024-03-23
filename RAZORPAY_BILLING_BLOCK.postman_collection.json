@@ -16,7 +16,16 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtD"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "",
@@ -43,7 +52,16 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtD"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "",
@@ -67,7 +85,16 @@
           "name": "cancel_user_subscription",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtD"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"subscriptionId\": \"testeststet\"\n}",
@@ -91,10 +118,19 @@
           "name": "update_user_subscription",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtD"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
-              "raw": "{ \n \"planId\": \"abc123\", \n \"cycleCount\": 5, \n \"startDate\": \"2024-02-01\", \n \"expiryDate\": \"2024-07-31\", \n \"metadata\": { \n     \"description\": \"Sample plan for testing purposes\" \n }, \n \"serviceMeta\": {} \n }",
+              "raw": "{ \n \"subscriptionId\": \"abcded123\", \n \"planId\": \"abc123\", \n \"cycleCount\": 5, \n \"startDate\": \"2024-02-01\", \n \"expiryDate\": \"2024-07-31\", \n \"metadata\": { \n     \"description\": \"Sample plan for testing purposes\" \n }, \n \"serviceMeta\": {} \n }",
               "options": {
                 "raw": {
                   "language": "json"
@@ -115,7 +151,16 @@
           "name": "create_user_subscription",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtD"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"planId\": \"IVdWmAvfSN_sVXOMM18Mq\",\n    \"cycleCount\": 1\n}",
@@ -139,7 +184,16 @@
           "name": "add_user_address",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtD"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"isPrimary\": true,\n    \"name\": \"John Doe\",\n    \"line1\": \"123 Main St\",\n    \"line2\": \"Apt 101\",\n    \"line3\": \"\",\n    \"city\": \"Springfield\",\n    \"state\": \"Illinois\",\n    \"country\": \"United States\",\n    \"postalCode\": \"12345\",\n    \"addressType\": \"billing_address\"\n}",
@@ -163,7 +217,16 @@
           "name": "update_user_address",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtD"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"id\": \"061y2bsepzetcefeamjKi\",\n    \"line1\": \"12345 Main St\",\n    \"postalCode\": \"123456\"\n}",
@@ -190,7 +253,16 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtD"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "",
@@ -217,7 +289,16 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtD"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "",
@@ -257,6 +338,14 @@
             },
             "method": "POST",
             "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              },
               {
                 "key": "User-Agent",
                 "value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
@@ -328,7 +417,16 @@
           "name": "admin_create_plan",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"name\": \"Test Plan A\",\n    \"amount\": 900,\n    \"currency\": \"INR\",\n    \"interval\": \"weekly\",\n    \"intervalCount\": 7,\n    \"description\": \"Testing workflow\",\n    \"metadata\": {\n        \"key\": \"value\"\n    }\n}",
@@ -355,7 +453,16 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "",
@@ -382,7 +489,16 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "",
@@ -409,7 +525,16 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n}",
@@ -433,7 +558,16 @@
           "name": "admin_create_subscription",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{ \n \"planId\": \"abc123\", \n \"userId\": \"user123\", \n \"cycleCount\": 5, \n \"startDate\": \"2024-02-01\", \n \"expiryDate\": \"2024-07-31\", \n \"metadata\": { \n     \"description\": \"Sample plan for testing purposes\" \n }, \n \"serviceMeta\": {} \n }",
@@ -468,6 +602,14 @@
             },
             "method": "POST",
             "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              },
               {
                 "key": "User-Agent",
                 "value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
@@ -539,7 +681,16 @@
           "name": "admin_cancel_subscription",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"subscriptionId\": \"testeststet\"\n}",
@@ -574,6 +725,14 @@
             },
             "method": "POST",
             "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              },
               {
                 "key": "User-Agent",
                 "value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
@@ -645,7 +804,16 @@
           "name": "admin_update_subscription",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{ \n \"planId\": \"abc123\", \n \"cycleCount\": 5, \n \"expiryDate\": \"2024-07-31\", \n \"metadata\": { \n     \"description\": \"Sample plan for testing purposes\" \n }, \n \"serviceMeta\": {} \n }",
@@ -680,6 +848,14 @@
             },
             "method": "POST",
             "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              },
               {
                 "key": "User-Agent",
                 "value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
@@ -752,7 +928,16 @@
           "name": "admin_pause_subscription",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"subscriptionId\": \"testeststet\"\n}",
@@ -776,7 +961,16 @@
           "name": "admin_resume_subscription",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "user",
+                "value": "zCSAYU_t2_aJYqEADBZtC"
+              },
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"subscriptionId\": \"testeststet\"\n}",
@@ -805,7 +999,12 @@
           "name": "vault add kv",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "vendor",
+                "value": "neo"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n  \"key\": \"vendor\",\n  \"value\": {\n    \"key_id\": \"key_id\",\n    \"key_secret\": \"key_secret\"\n  }\n}\n",

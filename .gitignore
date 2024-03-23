@@ -3,6 +3,8 @@
 ._bb_*
 .deployed.config.json
 
+ngrok.yml
+
 # Logs
 logs
 *.log
